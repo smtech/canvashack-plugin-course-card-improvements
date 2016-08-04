@@ -1,0 +1,13 @@
+{
+    "name": "canvashack/plugin-course-card-improvements",
+    "description": "Improve some notably stupid things about the default Canvas course cards on the dashboard.",
+    "type": "canvashack-plugin",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "sethbattis@stmarksschool.org"
+        }
+    ],
+    "require": {}
+}

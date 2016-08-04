@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<canvashack>
+	<name>Course Card Improvements</name>
+	<id>course-card-improvements</id>
+	<abstract>Improve some notably stupid things about the default Canvas course cards on the dashboard.</abstract>
+	<authors>
+		<author>
+			<name>Seth Battis</name>
+			<email>SethBattis@stmarksschool.org</email>
+		</author>
+	</authors>
+	<components>
+		<javascript>course-cards.js</javascript>
+		<css>course-cards.css</css>
+		<canvas>
+			<pages>
+				<include>
+					<page>
+						<type>url</type>
+						<url>/</url>
+					</page>
+				</include>
+			</pages>
+			<dom>
+				<bundle>
+					<event>load</event>
+					<action>cleanCards()</action>
+					<selector>body</selector>
+				</bundle>
+			</dom>
+		</canvas>
+	</components>
+        <config>
+            	<option name="card-height" type="boolean" description="Reduce card height to a tasteful minimum." />
+		<option name="redundant-subtitles" type="boolean" description="Remove redundant subtitles." />
+	</config>
+</canvashack>
